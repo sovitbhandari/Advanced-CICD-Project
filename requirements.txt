@@ -1,0 +1,4 @@
+Flask
+gunicorn
+flake8
+pytest
