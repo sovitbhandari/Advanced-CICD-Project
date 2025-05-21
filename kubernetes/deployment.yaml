@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: python-cicd-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: python-cicd-app
+  template:
+    metadata:
+      labels:
+        app: python-cicd-app
+    spec:
+      containers:
+      - name: python-cicd-app
+        image: DOCKER_USER/python-cicd-app:replaceImageTag   # Jenkins will patch this
+        ports:
+        - containerPort: 8080
