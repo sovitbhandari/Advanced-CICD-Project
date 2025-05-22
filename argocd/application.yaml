@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    repoURL: https://github.com/YOUR_GH_USER/Advanced-CICD-Project.git
+    repoURL: https://github.com/sovitbhandari/Advanced-CICD-Project.git
     path: kubernetes
     targetRevision: main
   syncPolicy:
